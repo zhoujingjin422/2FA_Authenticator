@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200ee</color>
+    <color name="colorPrimaryDark">#0113c7</color>
+    <color name="colorAccent">#03dac5</color>
+    <color name="bg_light_grey">#ecf1fd</color>
+    <color name="blue">#7963ff</color>
+    <color name="color3">#ffffff</color>
+    <color name="color4">#8f9da6</color>
+    <color name="colorDefaultAnim">#b8c7f0</color>
+    <color name="colorPink">#ff558e</color>
+    <color name="colorTextBlue">#4470eb</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="how_to_use_status_bar">#d9d9d9</color>
+    <color name="setting_status_bar">#4389e8</color>
+    <color name="status">#8695a3</color>
+    <color name="text_black">#010c39</color>
+    <color name="text_blue">#1830b4</color>
+    <color name="text_grey">#acb4d9</color>
+    <color name="tooltip_background_dark">#e6616161</color>
+    <color name="tooltip_background_light">#e6ffffff</color>
+</resources>

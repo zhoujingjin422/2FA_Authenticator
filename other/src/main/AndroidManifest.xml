@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.demo.example">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+    </queries>
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true">
+
+        <activity android:name=".authenticator.OpenActivity"/>
+
+        <activity
+            android:name=".authenticator.Privacy_Policy_activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.AccountActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.BarcodeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.AddSetupKeyActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".authenticator.HowToUseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.DisplayQrActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.locks.Utils.LockscreenHandler"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".authenticator.locks.Activities.LockscreenActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name=".authenticator.db.TokenProvider"
+            android:authorities="authentic.app.authenticator.provider"
+            android:exported="false" />
+
+
+
+        <meta-data
+            android:name="com.google.android.gms.ads.AD_MANAGER_APP"
+            android:value="true" />
+    </application>
+
+</manifest>

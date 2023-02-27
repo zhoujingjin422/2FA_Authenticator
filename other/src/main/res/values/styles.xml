@@ -1,0 +1,25 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ThemeOverlayColorAccentRed">
+        <item name="android:colorAccent">#ffff0000</item>
+    </style>
+
+    <style name="ToolbarStyle" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">#ffffff</item>
+    </style>
+
+    <style name="ToolbarStyleBlack" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/text_black</item>
+    </style>
+
+    <style name="PrivacyColoredBackArrowWhite" parent="@style/AppTheme">
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+
+</resources>

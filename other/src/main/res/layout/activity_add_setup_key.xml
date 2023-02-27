@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.92"
+                    android:background="#001d9f"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.42"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imgBack"
+                            android:layout_width="35dp"
+                            android:layout_height="25dp"
+                            android:src="@drawable/toolbar_backicon_black" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.2"
+                        android:gravity="center">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/overpass_bold"
+                            android:gravity="center"
+                            android:text="Add Setup Key"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linSave"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.38"
+                        android:gravity="center">
+
+                        <LinearLayout
+                            android:layout_width="65dp"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/token_list_item_copy_button"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_baseline_done_24" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.08"
+                    android:scrollbarThumbVertical="@null">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:background="@drawable/bg_setup_boxes"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="left|center_vertical|center_horizontal|center"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/overpass_regular"
+                                android:gravity="left|center_vertical|center_horizontal|center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Security"
+                                android:textColor="@color/text_black"
+                                android:textSize="16sp"
+                                android:visibility="visible" />
+
+                            <EditText
+                                android:id="@+id/issuer"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp"
+                                android:backgroundTint="@color/text_grey"
+                                android:fontFamily="@font/overpass_regular"
+                                android:hint="Enter Label"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_black"
+                                android:textColorHint="@color/text_grey"
+                                android:textSize="14sp" />
+
+                            <EditText
+                                android:id="@+id/secret"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp"
+                                android:backgroundTint="@color/text_grey"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ234567="
+                                android:fontFamily="@font/overpass_regular"
+                                android:hint="Enter Secret Key"
+                                android:imeOptions="actionUnspecified"
+                                android:inputType="text|textCapCharacters|textNoSuggestions|textUri|textPassword|textVisiblePassword"
+                                android:maxLength="32"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_black"
+                                android:textColorHint="@color/text_grey"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_setup_boxes"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="left|center_vertical|center_horizontal|center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="15dp"
+                                android:fontFamily="@font/overpass_regular"
+                                android:gravity="left|center_vertical|center_horizontal|center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Advance Security"
+                                android:textColor="@color/text_black"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/label"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp"
+                                android:backgroundTint="@color/text_grey"
+                                android:fontFamily="@font/overpass_regular"
+                                android:hint="Enter Username"
+                                android:paddingLeft="10dp"
+                                android:textColor="@color/text_black"
+                                android:textColorHint="@color/text_grey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:layout_gravity="left|center_vertical|center_horizontal|center"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/overpass_regular"
+                                android:gravity="left|center_vertical|center_horizontal|center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Type"
+                                android:textColor="@color/text_grey"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp">
+
+                                <Spinner
+                                    android:id="@+id/spType"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:background="@drawable/setup_outline"
+                                    android:dropDownSelector="#343244"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:layout_alignEnd="@+id/spType"
+                                    android:layout_alignRight="@+id/spType"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="20dp"
+                                    android:src="@drawable/spinner_drop_down_arrow_icon" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_setup_boxes"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="left|center_vertical|center_horizontal|center"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/overpass_regular"
+                                android:gravity="left|center_vertical|center_horizontal|center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Algorithm"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp">
+
+                                <Spinner
+                                    android:id="@+id/spAlgorithm"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:background="@drawable/setup_outline"
+                                    android:dropDownSelector="#343244"
+                                    android:spinnerMode="dropdown" />
+
+                                <ImageView
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:layout_alignEnd="@+id/spAlgorithm"
+                                    android:layout_alignRight="@+id/spAlgorithm"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="20dp"
+                                    android:src="@drawable/spinner_drop_down_arrow_icon" />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_setup_boxes"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/interval_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_gravity="left|center_vertical|center_horizontal|center"
+                                android:layout_marginLeft="10dp"
+                                android:fontFamily="@font/overpass_regular"
+                                android:gravity="left|center_vertical|center_horizontal|center"
+                                android:paddingTop="10dp"
+                                android:paddingBottom="10dp"
+                                android:text="Refresh"
+                                android:textColor="@color/text_black"
+                                android:textSize="14sp" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp">
+
+                                <EditText
+                                    android:id="@+id/interval"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="45dp"
+                                    android:backgroundTint="@color/text_grey"
+                                    android:fontFamily="@font/overpass_regular"
+                                    android:hint="30"
+                                    android:inputType="number"
+                                    android:maxLength="2"
+                                    android:paddingLeft="10dp"
+                                    android:text="30"
+                                    android:textColor="@color/text_black"
+                                    android:textColorHint="@color/text_grey"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/seconds_label"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:fontFamily="@font/overpass_regular"
+                                    android:paddingLeft="45dp"
+                                    android:text="Seconds"
+                                    android:textColor="@color/text_grey"
+                                    android:textSize="14sp" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bannerAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

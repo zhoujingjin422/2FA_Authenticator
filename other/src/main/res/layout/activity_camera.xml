@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_camera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTextBlue"
+    android:fitsSystemWindows="false">
+
+    <com.demo.example.authenticator.ui.CameraView
+        android:id="@+id/camera_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.demo.example.authenticator.ui.RatioLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_margin="64dp"
+        android:background="@drawable/scanner_outline"
+        android:maxWidth="320dp"
+        android:maxHeight="320dp">
+
+        <TextView
+            android:id="@+id/tv_camera_error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:fontFamily="@font/overpass_regular"
+            android:gravity="center"
+            android:text="@string/error_camera_open"
+            android:textColor="@color/colorWhite"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_instructions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_vertical|center_horizontal|center"
+            android:layout_margin="19dp"
+            android:fontFamily="@font/overpass_semibold"
+            android:gravity="center"
+            android:text="@string/scan_qr_code"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+    </com.demo.example.authenticator.ui.RatioLayout>
+</FrameLayout>

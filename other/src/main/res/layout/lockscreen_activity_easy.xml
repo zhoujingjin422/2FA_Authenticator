@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1830b4"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.92"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/actionBarSize"
+                        android:theme="@style/ToolbarStyle">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/overpass_regular"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:visibility="visible" />
+                    </androidx.appcompat.widget.Toolbar>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.08"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.7"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/lockscreen_icon_lock_icon" />
+
+                        <TextView
+                            android:id="@+id/haha_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/overpass_regular"
+                            android:gravity="center"
+                            android:text="Enter a password"
+                            android:textColor="#ffffff"
+                            android:textSize="20sp"
+                            android:visibility="visible" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="0.3"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.85"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.4"
+                                android:gravity="center" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_margin="5dp"
+                                android:layout_weight="0.2"
+                                android:background="@drawable/lockscreen_input_background"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/dotText"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:gravity="center"
+                                    android:inputType="textPassword"
+                                    android:textColor="#ffffff"
+                                    android:textSize="24sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.4"
+                                android:gravity="center" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_weight="0.15"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.2"
+                                android:gravity="center"
+                                android:orientation="vertical"
+                                android:weightSum="1">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn1"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="1"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn2"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="2"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn3"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="3"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn4"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="4"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn5"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="5"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn6"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="6"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn7"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="7"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn8"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="8"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn9"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="9"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_gravity="center"
+                                    android:layout_weight="0.25"
+                                    android:gravity="center"
+                                    android:orientation="horizontal"
+                                    android:weightSum="1">
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.1"
+                                        android:gravity="center"
+                                        android:orientation="horizontal"
+                                        android:weightSum="3">
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btnDone"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="✓"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btn0"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="0"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:layout_gravity="center"
+                                            android:layout_weight="1"
+                                            android:gravity="center">
+
+                                            <Button
+                                                android:id="@+id/btnErase"
+                                                style="@style/Base.Widget.AppCompat.Button.Borderless"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/overpass_regular"
+                                                android:gravity="center"
+                                                android:text="⌫"
+                                                android:textAlignment="center"
+                                                android:textColor="#ffffff"
+                                                android:textSize="25sp" />
+                                        </LinearLayout>
+                                    </LinearLayout>
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_gravity="center"
+                                        android:layout_weight="0.45"
+                                        android:gravity="center" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center"
+                                android:layout_weight="0.8"
+                                android:gravity="center" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/bannerAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

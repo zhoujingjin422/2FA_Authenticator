@@ -1,0 +1,66 @@
+<resources>
+
+    <string name="app_name">Authenticator</string>
+
+
+    <string name="pp">https://www.google.com</string>
+
+
+    <string name="bottomsheet_action_expand_halfway">Expand halfway</string>
+    <string name="bt_backup">Back up</string>
+    <string name="bt_menu">More…</string>
+    <string name="bt_paste">Import from clipboard instead</string>
+    <string name="bt_random_passphrase">Generate!</string>
+    <string name="bt_restore">Restore</string>
+    <string name="cd_show_passphrase">Show passphrase</string>
+    <string name="character_counter_pattern">%1$d/%2$d</string>
+    <string name="counter">Counter</string>
+    <string name="dialog_keyguard_export">Please verify your identity before making a backup.</string>
+    <string name="dialog_keyguard_share">Please verify your identity before sharing an account.</string>
+    <string name="dialog_text_delete_backup">Are you sure you want to delete backup %s?1010Once deleted, there is no ‘undo’!</string>
+    <string name="dialog_text_delete_token">Are you sure you want to delete account %s?1010Once deleted, there is no ‘undo’!</string>
+    <string name="dialog_title_restore">Select backup to restore:</string>
+    <string name="error_backup_failed">Creating backup failed. Make sure you have storage present.</string>
+    <string name="error_camera_open">Error while trying to access camera</string>
+    <string name="error_icon_content_description">Error</string>
+    <string name="error_import_fail">Oops, the imported file does not seem to be a valid backup file, or your password was incorrect.</string>
+    <string name="error_no_new_tokens">The imported backup does not include any new accounts.</string>
+    <string name="error_permission_camera">Please Allow Camera permission from settings.</string>
+    <string name="error_permission_storage">Please Allow Storage permission from settings.</string>
+    <string name="error_restore_no_backups">There are no backups.</string>
+    <string name="exposed_dropdown_menu_content_description">Show dropdown menu</string>
+    <string name="hint_passphrase">Passphrase</string>
+    <string name="icon_content_description">Dialog Icon</string>
+    <string name="interval">Refresh</string>
+    <string name="invalid_token">Scanned QR code was invalid! Please scan valid QR.</string>
+    <string name="menu_delete">Delete</string>
+    <string name="menu_edit">Edit…</string>
+    <string name="menu_hide">Hide</string>
+    <string name="menu_show_qr">Show QR code</string>
+    <string name="menu_unhide">Un-hide</string>
+    <string name="native_id">ca-app-pub-9250643505639316/4397015557</string>
+    <string name="no_keys">No accounts added.</string>
+    <string name="offline_notification_text">Tap to open ad</string>
+    <string name="offline_notification_title">View the ad you saved when you were offline</string>
+    <string name="offline_opt_in_confirm">OK</string>
+    <string name="offline_opt_in_confirmation">You\'ll get a notification with the link when you\'re back online</string>
+    <string name="offline_opt_in_decline">No thanks</string>
+    <string name="offline_opt_in_message">We\'ll send you a notification with a link to the advertiser site.</string>
+    <string name="offline_opt_in_title">Open ad when you\'re back online.</string>
+
+    <string name="scan_qr_code">Scan the QR Code</string>
+    <string name="search_menu_title">Search</string>
+    <string name="share_content_title">Authenticator encrypted backup</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+    <string name="swipe_to_dismiss">Swipe to dismiss</string>
+    <string name="toast_backup_done">Backup saved! You can now share it using other apps.</string>
+    <string name="toast_duplicate">This account is already added.</string>
+    <string name="toast_import_done">Restore complete! %s.</string>
+    <string name="toast_import_done_dupes">Restore complete! %1$s, %2$s.</string>
+    <string name="toast_import_done_simple">Account is added.</string>
+    <string name="token_added">Account added!</string>
+    <string name="tv_dont_forget">Don’t forget this password — backups are not recoverable without it!</string>
+    <string name="tv_passphrase_export">Please enter a passphrase to encrypt the backup. Minimum %d characters, and the longer the better.</string>
+    <string name="tv_passphrase_import">Please enter the passphrase that you used to encrypt the backup:</string>
+    <string name="tv_random_passphrase">Or tap here to have a memorable passphrase generated for you:</string>
+</resources>

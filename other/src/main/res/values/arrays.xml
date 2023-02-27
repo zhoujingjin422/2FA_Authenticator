@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="algorithms">
+        <item>SHA1</item>
+        <item>SHA256</item>
+        <item>SHA512</item>
+    </array>
+    <array name="package_whitelist">
+        <item>google</item>
+        <item>facebook</item>
+        <item>dropbox</item>
+        <item>slack</item>
+        <item>github</item>
+        <item>snapchat</item>
+        <item>discord</item>
+        <item>lastpass</item>
+        <item>protonmail</item>
+        <item>outlook</item>
+        <item>yahoo</item>
+        <item>onedrive</item>
+        <item>humblebundle</item>
+        <item>paypal</item>
+        <item>buffer</item>
+        <item>hootsuite</item>
+        <item>twitch</item>
+        <item>gitlab</item>
+        <item>amazon</item>
+        <item>evernote</item>
+        <item>tumblr</item>
+        <item>ifttt</item>
+        <item>koding</item>
+        <item>bitbucket</item>
+    </array>
+    <array name="token_types">
+        <item>Time-based (TOTP)</item>
+        <item>Counter-based (HOTP)</item>
+    </array>
+</resources>
