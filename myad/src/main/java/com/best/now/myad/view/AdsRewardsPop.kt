@@ -23,11 +23,9 @@ class AdsRewardsPop(context: Context,times:Int = 0,clickListener: OnClickListene
             when(times){
                 0->{
                     llVideo.visibility = View.GONE
-                    tvBottom.text = "The video is very short, please support us!"
                 }
                 1->{
                     llVideo.visibility = View.VISIBLE
-                    tvBottom.text = "2 more videos to be done！Keep on！"
                     ll2.setOnClickListener(clickListener)
                     ll3.setOnClickListener(clickListener)
                 }
@@ -40,7 +38,6 @@ class AdsRewardsPop(context: Context,times:Int = 0,clickListener: OnClickListene
                     val drawable =context.resources.getDrawable(R.drawable.icon_done)
                     tv2.setCompoundDrawablesWithIntrinsicBounds(drawable,null,null,null)
                     iv2.setImageResource(R.mipmap.video_watched)
-                    tvBottom.text = "1 more videos to be done！Keep on！"
                     ll3.setOnClickListener(clickListener)
                 }
             }

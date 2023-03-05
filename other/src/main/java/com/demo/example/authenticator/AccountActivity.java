@@ -29,6 +29,8 @@ import com.karumi.dexter.listener.PermissionGrantedResponse;
 import com.karumi.dexter.listener.PermissionRequest;
 import com.karumi.dexter.listener.single.PermissionListener;
 
+import static com.best.now.myad.utils.PublicHelperKt.showInterstitialAd;
+
 
 public class AccountActivity extends BaseActivity implements PermissionListener {
     private static final int PERMISSION_REQUEST_CODE = 1;
@@ -58,7 +60,7 @@ public class AccountActivity extends BaseActivity implements PermissionListener 
             intent.addFlags(67108864);
             startActivityForResult(intent, 283);
         }
-
+        showInterstitialAd(AccountActivity.this,null);
         this.btnAdd = (FloatingActionButton) findViewById(R.id.btnAdd);
         Dexter.initialize(getApplicationContext());
         Dexter.continuePendingRequestIfPossible(this);
